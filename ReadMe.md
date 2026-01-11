@@ -49,50 +49,35 @@ While the Hugging Face Space is convenient, it typically runs on **CPU**, which 
 
 
 ## General Extraction Schema
+```json
+{
+  "story_title": "string (5-300 characters) - A fully informative and SEO-optimized title",
+  "story_keywords": [
+    "keyword1",
+    "keyword2",
+    "..."
+  ],
+  "story_summary": [
+    "summary point 1",
+    "summary point 2",
+    "summary point 3",
+    "summary point 4",
+    "summary point 5"
+  ],
+  "story_category": "politics | sports | art | technology | economy | health | entertainment | science | not_specified",
+  "story_entities": [
+    {
+      "entity_value": "string - The actual name or value of the entity",
+      "entity_type": "person-male | person-female | location | organization | event | time | quantity | money | product | law | disease | artifact | not_specified"
+    }
+  ]
+}
+```
 
-## 1. story_title
-- **Type**: String
-- **Description**: A fully informative and SEO-optimized title of the story
-- **Length**: 5-300 characters
+**Field Descriptions:**
 
-## 2. story_keywords
-- **Type**: List of strings
-- **Description**: Relevant keywords associated with the story
-- **Minimum items**: 1
-
-## 3. story_summary
-- **Type**: List of strings
-- **Description**: Summarized key points about the story
-- **Items**: 1-5 bullet points
-
-## 4. story_category
-- **Type**: Single value from predefined categories
-- **Options**: 
-  - politics
-  - sports
-  - art
-  - technology
-  - economy
-  - health
-  - entertainment
-  - science
-  - not_specified
-
-## 5. story_entities
-- **Type**: List of entity objects (1-10 items)
-- **Each entity contains**:
-  - `entity_value`: The actual name or value of the entity (string)
-  - `entity_type`: One of the following types:
-    - person-male
-    - person-female
-    - location
-    - organization
-    - event
-    - time
-    - quantity
-    - money
-    - product
-    - law
-    - disease
-    - artifact
-    - not_specified
+- **story_title**: A fully informative and SEO-optimized title (5-300 characters)
+- **story_keywords**: List of relevant keywords (minimum 1 item)
+- **story_summary**: List of summarized key points (1-5 items)
+- **story_category**: Single category from predefined options
+- **story_entities**: List of identified entities (1-10 items), each with value and type
