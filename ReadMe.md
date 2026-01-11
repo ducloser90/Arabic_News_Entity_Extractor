@@ -47,49 +47,52 @@ While the Hugging Face Space is convenient, it typically runs on **CPU**, which 
 * **PEFT Adapter:** `duclo90/structured_output`
 * **Interface:** [Gradio](https://gradio.app/)
 
-## 🚀 Local Installation
 
-If you wish to run the project locally instead of using Colab or Hugging Face:
+## General Extraction Schema
 
-1. **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/ducloser90/Arabic_News_Entity_Extractor.git](https://github.com/ducloser90/Arabic_News_Entity_Extractor.git)
-    cd Arabic_News_Entity_Extractor
-    ```
+## 1. story_title
+- **Type**: String
+- **Description**: A fully informative and SEO-optimized title of the story
+- **Length**: 5-300 characters
 
-2. **Create a Virtual Environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
+## 2. story_keywords
+- **Type**: List of strings
+- **Description**: Relevant keywords associated with the story
+- **Minimum items**: 1
 
-3. **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+## 3. story_summary
+- **Type**: List of strings
+- **Description**: Summarized key points about the story
+- **Items**: 1-5 bullet points
 
-4. **Run the App:**
-    ```bash
-    python app.py
-    ```
+## 4. story_category
+- **Type**: Single value from predefined categories
+- **Options**: 
+  - politics
+  - sports
+  - art
+  - technology
+  - economy
+  - health
+  - entertainment
+  - science
+  - not_specified
 
-## 📊 Extraction Schema
-
-The model is constrained to output data according to this strict JSON format:
-
-```json
-{
-  "story_title": "Optimized Title Here",
-  "story_keywords": ["keyword1", "keyword2"],
-  "story_summary": [
-    "Key point 1",
-    "Key point 2"
-  ],
-  "story_category": "Economy",
-  "story_entities": [
-    {
-      "entity_value": "Name/Place",
-      "entity_type": "person-male/location"
-    }
-  ]
-}
+## 5. story_entities
+- **Type**: List of entity objects (1-10 items)
+- **Each entity contains**:
+  - `entity_value`: The actual name or value of the entity (string)
+  - `entity_type`: One of the following types:
+    - person-male
+    - person-female
+    - location
+    - organization
+    - event
+    - time
+    - quantity
+    - money
+    - product
+    - law
+    - disease
+    - artifact
+    - not_specified
