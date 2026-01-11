@@ -5,6 +5,7 @@ An AI-powered NLP tool designed to transform unstructured Arabic news articles i
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/duclo90/Arabic_News_Entity_Extractor)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ducloser90/Arabic_News_Entity_Extractor/blob/main/Arabic_News_Entity_Extractor.ipynb)
 [![Model: Qwen 2.5](https://img.shields.io/badge/Model-Qwen2.5--1.5B-purple)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
+[![Adapter: structured_output](https://img.shields.io/badge/%F0%9F%A4%97%20HF%20Adapter-structured__output-orange)](https://huggingface.co/duclo90/structured_output)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](LICENSE)
 
 ## 📖 Project Overview
