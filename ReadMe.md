@@ -3,7 +3,8 @@
 An AI-powered NLP tool designed to transform unstructured Arabic news articles into structured, machine-readable JSON data. This project leverages a fine-tuned **Qwen 2.5 (1.5B)** model with a specialized adapter to perform high-accuracy Information Extraction (IE) and Named Entity Recognition (NER).
 
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/Arabic_News_Entity_Extractor.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://github.com/ducloser90/Arabic_News_Entity_Extractor/blob/main/Arabic_News_Entity_Extractor.ipynb)
 [![Model: Qwen 2.5](https://img.shields.io/badge/Model-Qwen2.5--1.5B-purple)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](LICENSE)
 
