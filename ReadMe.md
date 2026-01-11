@@ -46,7 +46,6 @@ While the Hugging Face Space is convenient, it typically runs on **CPU**, which 
 * **Base Model:** `Qwen/Qwen2.5-1.5B-Instruct`
 * **PEFT Adapter:** `duclo90/structured_output`
 * **Interface:** [Gradio](https://gradio.app/)
-* **Core Libraries:** `transformers`, `peft`, `pydantic`, `json_repair`
 
 ## 🚀 Local Installation
 
