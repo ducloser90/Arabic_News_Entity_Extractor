@@ -15,7 +15,6 @@ Extracting structured data from Arabic text is often difficult due to linguistic
 Here is a concrete example of how an Arabic sports article is processed into structured JSON:
 
 ![Project Workflow Example](https://github.com/user-attachments/assets/1b3f2389-851e-42f2-b652-629a87c1fc55)
-![Image](https://github.com/user-attachments/assets/889bc774-6a34-4674-a5f3-623e3e702c94)
 
 
 
